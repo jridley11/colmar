@@ -4,10 +4,51 @@ html {
 }
 
 body {
-  line-height: 2rem;
+  line-height: 1.35rem;
   font-family: Helvetica;
   font-size: 1rem;
-  color: dimgray;
+  color: tan;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  padding: 2rem 1.5rem;
+  width: 60%;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0 2rem 0;
+}
+
+.left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  color: beige;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.15rem;
+}
+
+h2 {
+  font-size: 1.85rem;
+  line-height: 2.5rem;
+  margin-top: .5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 /* Header Section */
@@ -20,6 +61,7 @@ header {
   width: 100%;
   height: 4rem;
   background-color: beige;
+  color: black;
 }
 
 .logo {
@@ -28,6 +70,7 @@ header {
   font-size: 1.3rem;
   font-weight: 100;
   font-family: GT Walsheim;
+  color: firebrick;
 }
 
 .logo img {
@@ -57,52 +100,66 @@ header li {
   top: 4rem;
 
 }
-
+/* Start Here Section */
 .start-here-section  {
-  background: peru;
-}
-
-.left img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-#container {
-  display: flex;
-  align-items: center;
-}
-
-.left {
-  padding: 2rem 1.5rem;
-
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  color: cornsilk;
-}
-
-.right h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 4rem;
-}
-
-.right h2 {
-  font-size: 1.85rem;
-  line-height: 2.5rem;
+  background: sienna;
 }
 
 .right .button {
   align-self: center;
-  background-color: saddlebrown;
-  padding: 8px 100px;
+  background-color: beige;
+  padding: 8px 70px;
   border-radius: .7rem;
-  color: white;
+  color: brown;
+  font-weight: 500;
   font-size: 1.10rem;
   margin-top: 1rem;
+  transition:
 }
 
-/* Start Here Section */
+/*-- Info Section --*/
+.info-section  {
+  background-color: darkslategray;
+}
+
+.info-section h1 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.info-section h6 {
+  margin-top: 2rem
+}
+
+.info-section .right {
+   border-left: 2px solid beige;
+}
+
+.small-info {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 2px solid beige;
+}
+
+.small-info img {
+  width:35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.small-info .text {
+  width: 65%;
+}
+
+.guest {
+  background-color: beige;
+  color: black;
+}
+
+/*-- Courses Section --*/
+.course-section {
+  background-color: gray;
+}
+
+.courses h1 {
+  padding: 2rem 0 2rem 0;
+}
