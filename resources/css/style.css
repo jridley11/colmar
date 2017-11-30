@@ -49,6 +49,11 @@ h3 {
   font-size: 1.25rem;
 }
 
+.guest, .fisma {
+  background-color: beige;
+  color: black;
+}
+
 /* Header Section */
 header {
   display: flex;
@@ -149,11 +154,6 @@ header li {
   line-height:
 }
 
-.guest {
-  background-color: beige;
-  color: black;
-}
-
 /*-- Course Section --*/
 .course-section {
   width: 100%;
@@ -198,10 +198,22 @@ header li {
 }
 
 /*-- Thesis Section --*/
+.thesis-section {
+  width: 100%;
+  background-color: darkslategray;
 
-
+}
 .thesis-section h1 {
-
   padding-top: 2rem;
   text-align: center;
 }
+
+.thesis-section video {
+  padding-bottom: 1.5rem;
+}
+
+.nyc {
+  border-bottom: 0px;
+}
+
+/*-- Footer --*/
