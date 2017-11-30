@@ -1,3 +1,21 @@
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen Regular'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v7/qBSyz106i5ud7wkBU-FrPevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(https://fonts.gstatic.com/s/oxygen/v7/yVHpdQrmTj9Kax1tmFSx2pBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /* Universal Styles */
 html {
   font-size: 16px;
@@ -5,9 +23,9 @@ html {
 
 body {
   line-height: 1.35rem;
-  font-family: Helvetica;
+  font-family: 'Oxygen';
   font-size: 1rem;
-  color: tan;
+  color: whitesmoke;
 }
 
 .container {
@@ -33,11 +51,15 @@ body {
   display: block;
 }
 
+.right img {
+  border: 0;
+}
+
 h1 {
-  color: beige;
   font-size: 3rem;
   font-weight: 900;
   line-height: 3.15rem;
+  color: snow;
 }
 
 h2 {
@@ -49,8 +71,12 @@ h3 {
   font-size: 1.25rem;
 }
 
+.left h5 {
+   font-style: italic;
+}
+
 .guest, .fisma {
-  background-color: beige;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -63,8 +89,10 @@ header {
   z-index: 1;
   width: 100%;
   height: 4rem;
-  background-color: beige;
+  background-color: snow;
   color: black;
+  border-bottom: 2px solid dimgray;
+  padding: 0 1.5rem;
 }
 
 .logo {
@@ -72,13 +100,13 @@ header {
   align-items: center;
   font-size: 1.3rem;
   font-weight: 100;
-  font-family: GT Walsheim;
+  font-family: 'GT Walsheim';
   color: firebrick;
 }
 
 .logo img {
   height: 2rem;
-  padding-left: 1.5rem;
+  border: 0;
 }
 
 .logo h3 {
@@ -95,34 +123,39 @@ header li {
   font-size: 1.15rem;
 }
 
-
-
+img, video {
+  border: 2px solid beige;
+}
 /* Main Content Section */
 #main {
   position: relative;
   top: 4rem;
-
+  border-left: 2px solid dimgray;
 }
+
 /* Start Here Section */
 .start-here-section  {
-  background: sienna;
+  background-color: steelblue;
+  border-bottom: 2px solid dimgray;
 }
 
 .right .button {
   align-self: center;
-  background-color: beige;
-  padding: 8px 70px;
-  border-radius: .7rem;
+  background-color: mintcream;
+  padding: 8px 60px;
+  border-radius: 7px;
   color: brown;
   font-weight: 500;
   font-size: 1.10rem;
   margin-top: 1rem;
+  border: 2px solid dimgray;
   transition:
 }
 
 /*-- Info Section --*/
 .info-section  {
-  background-color: darkslategray;
+  background-color: grey;
+  border-bottom: 2px solid dimgray;
 }
 
 .info-section h1 {
@@ -157,7 +190,8 @@ header li {
 /*-- Course Section --*/
 .course-section {
   width: 100%;
-  background-color: sienna;
+  background-color: steelblue;
+  border-bottom: 2px solid dimgray;
 }
 
 .course-section h1 {
@@ -177,7 +211,7 @@ header li {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 2rem 2rem 0 0;
-  background-color: beige;
+  background-color: whitesmoke;
   width: 30%;
   border-radius: 7px;
 }
@@ -200,16 +234,17 @@ header li {
 /*-- Thesis Section --*/
 .thesis-section {
   width: 100%;
-  background-color: darkslategray;
-
+  background-color: grey;
+  border-bottom: 2px solid dimgray;
 }
+
 .thesis-section h1 {
   padding-top: 2rem;
   text-align: center;
 }
 
 .thesis-section video {
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .nyc {
@@ -217,3 +252,19 @@ header li {
 }
 
 /*-- Footer --*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  color: black;
+  padding: 1rem 1.5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  padding-right: 1rem;
+}
