@@ -23,7 +23,7 @@ html {
 
 body {
   line-height: 1.35rem;
-  font-family: 'Oxygen';
+  font-family: 'Oxygen', 'Helvetica', serif;
   font-size: 1rem;
   color: whitesmoke;
 }
@@ -56,19 +56,31 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  line-height: 3.15rem;
-  color: snow;
+  line-height: 4.15rem;
+  font-style: underline;
 }
 
 h2 {
   font-size: 1.85rem;
   line-height: 2.5rem;
+  font-weight: 700;
+  color: darkslategray;
 }
 
 h3 {
   font-size: 1.25rem;
+  padding: 0.5rem 0;
+
+}
+
+a {
+  color: darkslategray;
+}
+
+a:hover {
+  color: firebrick;
 }
 
 .left h5 {
@@ -76,8 +88,12 @@ h3 {
 }
 
 .guest, .fisma {
-  background-color: whitesmoke;
+  background-color: beige;
   color: black;
+}
+
+.start-here-section h1, .info-section h1, .thesis-section h1 {
+  color: darkslategray;
 }
 
 /* Header Section */
@@ -89,7 +105,7 @@ header {
   z-index: 1;
   width: 100%;
   height: 4rem;
-  background-color: snow;
+  background-color: beige;
   color: black;
   border-bottom: 2px solid dimgray;
   padding: 0 1.5rem;
@@ -109,16 +125,16 @@ header {
   border: 0;
 }
 
-.logo h3 {
+.logo h4 {
   color: black;
   font-weight: 900;
 }
 
-header ul {
+header nav {
   display: flex;
   padding-right: 1.5rem;
 }
-header li {
+header a {
   padding-right: 1rem;
   font-size: 1.15rem;
 }
@@ -135,26 +151,39 @@ img, video {
 
 /* Start Here Section */
 .start-here-section  {
-  background-color: steelblue;
+  background: linear-gradient(lightsteelblue,steelblue);
   border-bottom: 2px solid dimgray;
+}
+
+.start-here-section h2 {
+  margin-top: 1rem;
+  font-size: 1.72rem;
+  color: whitesmoke;
 }
 
 .right .button {
   align-self: center;
-  background-color: mintcream;
-  padding: 8px 60px;
+  margin-top: 3rem;
+}
+
+.right .button a {
+  background-color: whitesmoke;
+  color: darkslategray;
+  padding: 8px 55px;
   border-radius: 7px;
-  color: brown;
   font-weight: 500;
-  font-size: 1.10rem;
-  margin-top: 1rem;
-  border: 2px solid dimgray;
-  transition:
+  font-size: 1.30rem;
+  border: 2px solid darkslategray;
+}
+
+.right .button a:hover {
+  background-color: darkslategray;
+  color: whitesmoke;
 }
 
 /*-- Info Section --*/
 .info-section  {
-  background-color: grey;
+  background: linear-gradient(lightsteelblue,gray);
   border-bottom: 2px solid dimgray;
 }
 
@@ -163,11 +192,24 @@ img, video {
 }
 
 .info-section h6 {
-  margin-top: 2rem
+  margin-top: 1.2rem
 }
 
 .info-section .right {
    border-left: 2px solid beige;
+}
+
+.info-section h6, .info-section .right a {
+  color: darkslategray;
+  font-weight: 500;
+}
+
+.right a {
+  font-size: 1.15rem;
+}
+
+.right a:hover {
+  color: firebrick;
 }
 
 .small-info {
@@ -184,8 +226,8 @@ img, video {
 
 .small-info .text {
   width: 65%;
-  line-height:
 }
+
 
 /*-- Course Section --*/
 .course-section {
@@ -197,6 +239,7 @@ img, video {
 .course-section h1 {
   padding-top: 2rem;
   text-align: center;
+  color: snow;
 }
 
 .courses-container {
@@ -214,12 +257,22 @@ img, video {
   background-color: whitesmoke;
   width: 30%;
   border-radius: 7px;
+  border: 2px solid beige;
+}
+
+.course-info:hover {
+ background-color: lightsteelblue;
+}
+.course-info img:hover {
+ opacity: 0.5;
 }
 
 .course-info img {
   height: auto;
+  width: 100%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  border: 0;
 }
 
 .course-info .text {
@@ -234,11 +287,12 @@ img, video {
 /*-- Thesis Section --*/
 .thesis-section {
   width: 100%;
-  background-color: grey;
+  background: linear-gradient(lightsteelblue,gray);
   border-bottom: 2px solid dimgray;
 }
 
 .thesis-section h1 {
+
   padding-top: 2rem;
   text-align: center;
 }
@@ -260,11 +314,11 @@ footer {
   padding: 1rem 1.5rem;
 }
 
-footer ul {
+footer nav {
   display: flex;
   justify-content: space-between;
 }
 
-footer li {
+footer a {
   padding-right: 1rem;
 }
