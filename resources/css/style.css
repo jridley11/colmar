@@ -80,6 +80,10 @@ a {
 }
 
 a:hover {
+  color: darkcyan;
+}
+
+a:active {
   color: firebrick;
 }
 
@@ -106,7 +110,6 @@ header {
   width: 100%;
   height: 4rem;
   background-color: beige;
-  color: black;
   border-bottom: 2px solid dimgray;
   padding: 0 1.5rem;
 }
@@ -134,6 +137,7 @@ header nav {
   display: flex;
   padding-right: 1.5rem;
 }
+
 header a {
   padding-right: 1rem;
   font-size: 1.15rem;
@@ -142,6 +146,7 @@ header a {
 img, video {
   border: 2px solid beige;
 }
+
 /* Main Content Section */
 #main {
   position: relative;
@@ -155,6 +160,11 @@ img, video {
   border-bottom: 2px solid dimgray;
 }
 
+h1 {
+  opacity: .85;
+  transition: opacity 1.5s ease-in 0.5s;
+}
+
 .start-here-section h2 {
   margin-top: 1rem;
   font-size: 1.72rem;
@@ -164,12 +174,13 @@ img, video {
 .right .button {
   align-self: center;
   margin-top: 3rem;
+  opacity: .85;
 }
 
 .right .button a {
   background-color: whitesmoke;
   color: darkslategray;
-  padding: 8px 55px;
+  padding: 8px 100px;
   border-radius: 7px;
   font-weight: 500;
   font-size: 1.30rem;
@@ -179,6 +190,14 @@ img, video {
 .right .button a:hover {
   background-color: darkslategray;
   color: whitesmoke;
+  transition: all 50ms ease-out;
+
+}
+
+.right .button a:active {
+  background-color: brown;
+  color: whitesmoke;
+  transition: all 1ms linear;
 }
 
 /*-- Info Section --*/
@@ -209,6 +228,10 @@ img, video {
 }
 
 .right a:hover {
+  color: darkcyan;
+}
+
+.right a:active {
   color: firebrick;
 }
 
@@ -262,9 +285,7 @@ img, video {
 
 .course-info:hover {
  background-color: lightsteelblue;
-}
-.course-info img:hover {
- opacity: 0.5;
+ opacity: 0.9;
 }
 
 .course-info img {
@@ -291,8 +312,19 @@ img, video {
   border-bottom: 2px solid dimgray;
 }
 
-.thesis-section h1 {
+.thesis-section .small-info:hover {
+  background-color: darkcyan;
+}
 
+.thesis-section .small-info:active {
+  background-color: brown;
+}
+
+.thesis-section .small-info {
+  border: none;
+}
+
+.thesis-section h1 {
   padding-top: 2rem;
   text-align: center;
 }
