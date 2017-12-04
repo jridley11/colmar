@@ -36,7 +36,6 @@ body {
 .left {
   padding: 2rem 1.5rem;
   width: 60%;
-
 }
 
 .right {
@@ -56,14 +55,14 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 4.15rem;
   font-style: underline;
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: 1.35rem;
   line-height: 2.5rem;
   font-weight: 700;
   color: darkslategray;
@@ -76,7 +75,7 @@ h3 {
 }
 
 a {
-  color: darkslategray;
+  color: black;
 }
 
 a:hover {
@@ -99,6 +98,14 @@ a:active {
 .start-here-section h1, .info-section h1, .thesis-section h1 {
   color: darkslategray;
 }
+
+/* Media Queries */
+@media only screen and(max-width : 700px) {
+  .mobile {
+
+  }
+}
+
 
 /* Header Section */
 header {
@@ -145,6 +152,7 @@ header a {
 
 img, video {
   border: 2px solid beige;
+  border-radius: 7px;
 }
 
 /* Main Content Section */
@@ -160,11 +168,6 @@ img, video {
   border-bottom: 2px solid dimgray;
 }
 
-h1 {
-  opacity: .85;
-  transition: opacity 1.5s ease-in 0.5s;
-}
-
 .start-here-section h2 {
   margin-top: 1rem;
   font-size: 1.72rem;
@@ -178,26 +181,25 @@ h1 {
 }
 
 .right .button a {
-  background-color: whitesmoke;
-  color: darkslategray;
-  padding: 8px 100px;
+  background-color: darkslategray;
+  color: whitesmoke;
+  padding: 8px 70px;
   border-radius: 7px;
   font-weight: 500;
   font-size: 1.30rem;
-  border: 2px solid darkslategray;
+  border: 2px solid whitesmoke;
 }
 
 .right .button a:hover {
-  background-color: darkslategray;
-  color: whitesmoke;
-  transition: all 50ms ease-out;
-
+  background-color: whitesmoke;
+  color: darkslategray;
+  transition: color 200ms ease-out 100ms;
 }
 
 .right .button a:active {
   background-color: brown;
   color: whitesmoke;
-  transition: all 1ms linear;
+  transition: color 10ms linear;
 }
 
 /*-- Info Section --*/
@@ -245,12 +247,20 @@ h1 {
   width:35%;
   height: auto;
   padding: 1rem;
+  border-radius: 9%;
 }
 
 .small-info .text {
   width: 65%;
 }
 
+.campus {
+  border-bottom: 1px solid dimgray;
+}
+
+.guest {
+  border-top: 1px solid dimgray;
+}
 
 /*-- Course Section --*/
 .course-section {
@@ -262,7 +272,7 @@ h1 {
 .course-section h1 {
   padding-top: 2rem;
   text-align: center;
-  color: snow;
+  color: whitesmoke;
 }
 
 .courses-container {
@@ -279,26 +289,41 @@ h1 {
   margin: 2rem 2rem 0 0;
   background-color: whitesmoke;
   width: 30%;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 2px solid beige;
+  color: black;
+}
+
+.course-info h2 {
+  padding: 1rem 0 0 1rem;
+}
+
+.course-info h3 {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.course-info p {
+  padding: 0 0 1.5rem 1rem;
 }
 
 .course-info:hover {
- background-color: lightsteelblue;
- opacity: 0.9;
+ background-color: darkseagreen;
+ color: beige;
+}
+
+.course-info:active {
+  background-color: brown;
+  color: beige;
 }
 
 .course-info img {
   height: auto;
   width: 100%;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   border: 0;
-}
-
-.course-info .text {
- color: black;
- padding: 1rem 0 1.5rem 1rem;
 }
 
 .course-info h3 {
@@ -313,15 +338,13 @@ h1 {
 }
 
 .thesis-section .small-info:hover {
-  background-color: darkcyan;
+  background-color: darkseagreen;
+  color: beige;
 }
 
 .thesis-section .small-info:active {
   background-color: brown;
-}
-
-.thesis-section .small-info {
-  border: none;
+  color: beige;
 }
 
 .thesis-section h1 {
@@ -329,12 +352,24 @@ h1 {
   text-align: center;
 }
 
+
 .thesis-section video {
   margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.thesis-section img {
+  border-radius: 9%;
+}
+
+.fisma {
+  border-bottom: 1px solid dimgray;
+  border-top-left-radius: 5px;
 }
 
 .nyc {
-  border-bottom: 0px;
+  border-top: 1px solid dimgray;
+  border-bottom: none;
 }
 
 /*-- Footer --*/
