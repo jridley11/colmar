@@ -30,7 +30,6 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
 }
 
 .left {
@@ -190,6 +189,10 @@ header a {
   background-color: brown;
   color: whitesmoke;
   transition: color 10ms linear;
+}
+
+.start-here-section {
+  align-items: center;
 }
 
 /*-- Info Section --*/
@@ -352,6 +355,18 @@ header a {
   border-radius: 9%;
 }
 
+.thesis-section .container {
+  display:inline-flex;
+}
+
+.container .right {
+  padding-top: 1rem;
+}
+
+.thesis .right {
+  padding-top: 2rem; 
+}
+
 .fisma {
   border-bottom: 1px solid dimgray;
   border-top-left-radius: 5px;
@@ -490,6 +505,30 @@ footer a {
     padding: 2rem 0rem 1rem 0rem;
     font-size: 2.4rem;
     line-height: 3rem;
+  }
+
+  .course-info {
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid dimgray;
+  }
+
+  .course-info h2 {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .courses-container {
+    display: block;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .course-section h1 {
+    padding-top: 0;
+  }
+
+  .course-section {
+    padding-top: 2rem;
   }
 
   .mobile-view h2 {
